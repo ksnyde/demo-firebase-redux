@@ -1,0 +1,35 @@
+<screen fill>
+  <vbox class='navigation' fit>
+    {{#ui-navigation
+      selected=currentPath
+      mood='primary'
+      onChange=(action 'navHandler')
+
+      as |nav|
+    }}
+
+      {{#nav.items}}
+      {{#nav.brand
+        routeTo='index'
+      }}
+        {{icon 'apple' size='2rem'}}
+        Factual Food
+        &nbsp;
+      {{/nav.brand}}
+        {{nav.item 'About' routeTo='about'}}
+        {{nav.item 'Studies' routeTo='studies'}}
+        {{nav.item 'Diets' routeTo='diets'}}
+        {{nav.item 'The Team' routeTo='team'}}
+
+        {{#nav.right}}
+          {{nav.item 'Blog' routeTo='blog'}}
+          {{nav.item 'Feedback' routeTo='feedback'}}
+          {{nav.item 'Donate' routeTo='donate'}}
+        {{/nav.right}}
+      {{/nav.items}}
+    {{/ui-navigation}}
+  </vbox>
+  <vbox>
+    {{outlet}}
+  </vbox>
+</screen>

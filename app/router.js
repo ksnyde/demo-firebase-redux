@@ -7,6 +7,14 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('about');
+  this.route('diet');
+  this.route('studies');
+  this.route('team');
+  this.route('blog');
+  this.route('feedback');
+  this.route('donate');
+  this.route('diets');
 });
 
 export default Router;

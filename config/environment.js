@@ -20,7 +20,12 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    firebase: {
+      apiKey: 'AIzaSyCU1u5SevdGGER_r1lQ4AHpMRxzcjZvDbY',
+      authDomain: 'factualfood.firebaseapp.com',
+      databaseURL: 'https://factualfood.firebaseio.com',
+    },
   };
 
   if (environment === 'development') {
