@@ -14,10 +14,6 @@ export default Ember.Route.extend({
         redux.dispatch(studies.updateStudies(changes.studies));
       }
     });
-    //
-    // studies.on('value', snapshot => {
-    //   actions.updateStudies(snapshot.val());
-    // });
   }
 
 });

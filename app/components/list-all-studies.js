@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import * as studies from 'factual-food/redux/actions/studies';
+import redux from '../mixins/redux';
 
-export default Ember.Component.extend({
-
+export default Ember.Component.extend(redux, {
+  stateInterest: ['studies']
 });
