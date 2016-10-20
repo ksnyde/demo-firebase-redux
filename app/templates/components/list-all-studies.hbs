@@ -1,1 +1,7 @@
-{{yield}}
+<ul>
+  {{#each studies as |study|}}
+    <li>
+      {{study.name}} - {study.releasedOn}
+    </li>
+  {{/each}}
+</ul>

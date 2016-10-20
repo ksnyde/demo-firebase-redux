@@ -17,14 +17,13 @@ import Immutable from 'immutable';
  * "OrderedMap" as an Immutable data structure. Javascript
  * Arrays map to "List".
  */
-const defaultState = Immutable.List();
+const defaultState = Immutable.OrderedMap();
 const reducer = (state, action) => {
 
   switch(action.type) {
 
     case 'UPDATE_STUDIES':
-
-      return Immutable.list(action.studies);
+      return Immutable.OrderedMap(action.studies);
 
     case 'ADD_STUDIES':
 
